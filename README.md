@@ -21,7 +21,7 @@ The provided code is available under the [GNU General Public License v3](https:/
 
 ## Sources
 ### Simulation Files
-The configuration files and the topologies used for evaluation can be found int the folder `od3r_eval`.
+The configuration files and the topologies used for evaluation can be found int the folder `od3r-eval`.
 
 ### OD3R OMNeT++ INET Patch
 This patch adds OD3R to INET version 4.4.1 for OMNeT Version 6.0.1.
