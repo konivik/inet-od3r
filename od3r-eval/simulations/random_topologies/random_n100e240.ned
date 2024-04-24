@@ -1,0 +1,276 @@
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+// 
+
+package od3r_eval.simulations.random_topologies;
+import od3r_eval.simulations.random_topologies.RandomTopology;
+import inet.node.inet.Router;
+
+import ned.DatarateChannel;
+
+//
+// Generated network with random topology (100 nodes, 240 edges, seed=83).
+// Min shortest path: 1, Max shortest path: 5, AVG: 3.140
+//
+network RandomN100E240 extends RandomTopology {
+    types:
+        channel Channel extends DatarateChannel
+        {
+            datarate = 10Gbps;
+            delay = 0.3ms;
+        }
+    submodules:
+        router[100] : Router;
+    connections:
+        router[0].pppg++ <--> Channel <--> router[64].pppg++;
+        router[0].pppg++ <--> Channel <--> router[1].pppg++;
+        router[0].pppg++ <--> Channel <--> router[49].pppg++;
+        router[0].pppg++ <--> Channel <--> router[2].pppg++;
+        router[0].pppg++ <--> Channel <--> router[7].pppg++;
+        router[0].pppg++ <--> Channel <--> router[71].pppg++;
+        router[0].pppg++ <--> Channel <--> router[10].pppg++;
+        router[1].pppg++ <--> Channel <--> router[17].pppg++;
+        router[1].pppg++ <--> Channel <--> router[4].pppg++;
+        router[1].pppg++ <--> Channel <--> router[39].pppg++;
+        router[1].pppg++ <--> Channel <--> router[55].pppg++;
+        router[1].pppg++ <--> Channel <--> router[28].pppg++;
+        router[1].pppg++ <--> Channel <--> router[14].pppg++;
+        router[1].pppg++ <--> Channel <--> router[31].pppg++;
+        router[2].pppg++ <--> Channel <--> router[3].pppg++;
+        router[2].pppg++ <--> Channel <--> router[37].pppg++;
+        router[2].pppg++ <--> Channel <--> router[57].pppg++;
+        router[2].pppg++ <--> Channel <--> router[31].pppg++;
+        router[3].pppg++ <--> Channel <--> router[86].pppg++;
+        router[3].pppg++ <--> Channel <--> router[24].pppg++;
+        router[3].pppg++ <--> Channel <--> router[26].pppg++;
+        router[3].pppg++ <--> Channel <--> router[13].pppg++;
+        router[3].pppg++ <--> Channel <--> router[15].pppg++;
+        router[4].pppg++ <--> Channel <--> router[66].pppg++;
+        router[4].pppg++ <--> Channel <--> router[5].pppg++;
+        router[4].pppg++ <--> Channel <--> router[21].pppg++;
+        router[4].pppg++ <--> Channel <--> router[6].pppg++;
+        router[4].pppg++ <--> Channel <--> router[8].pppg++;
+        router[5].pppg++ <--> Channel <--> router[82].pppg++;
+        router[5].pppg++ <--> Channel <--> router[20].pppg++;
+        router[5].pppg++ <--> Channel <--> router[56].pppg++;
+        router[5].pppg++ <--> Channel <--> router[92].pppg++;
+        router[6].pppg++ <--> Channel <--> router[11].pppg++;
+        router[6].pppg++ <--> Channel <--> router[12].pppg++;
+        router[6].pppg++ <--> Channel <--> router[62].pppg++;
+        router[6].pppg++ <--> Channel <--> router[30].pppg++;
+        router[7].pppg++ <--> Channel <--> router[48].pppg++;
+        router[7].pppg++ <--> Channel <--> router[20].pppg++;
+        router[7].pppg++ <--> Channel <--> router[37].pppg++;
+        router[7].pppg++ <--> Channel <--> router[38].pppg++;
+        router[7].pppg++ <--> Channel <--> router[23].pppg++;
+        router[8].pppg++ <--> Channel <--> router[85].pppg++;
+        router[8].pppg++ <--> Channel <--> router[9].pppg++;
+        router[8].pppg++ <--> Channel <--> router[59].pppg++;
+        router[8].pppg++ <--> Channel <--> router[75].pppg++;
+        router[8].pppg++ <--> Channel <--> router[13].pppg++;
+        router[9].pppg++ <--> Channel <--> router[21].pppg++;
+        router[9].pppg++ <--> Channel <--> router[40].pppg++;
+        router[9].pppg++ <--> Channel <--> router[91].pppg++;
+        router[9].pppg++ <--> Channel <--> router[28].pppg++;
+        router[10].pppg++ <--> Channel <--> router[18].pppg++;
+        router[10].pppg++ <--> Channel <--> router[34].pppg++;
+        router[10].pppg++ <--> Channel <--> router[69].pppg++;
+        router[10].pppg++ <--> Channel <--> router[71].pppg++;
+        router[10].pppg++ <--> Channel <--> router[73].pppg++;
+        router[10].pppg++ <--> Channel <--> router[29].pppg++;
+        router[11].pppg++ <--> Channel <--> router[90].pppg++;
+        router[11].pppg++ <--> Channel <--> router[30].pppg++;
+        router[11].pppg++ <--> Channel <--> router[94].pppg++;
+        router[11].pppg++ <--> Channel <--> router[79].pppg++;
+        router[12].pppg++ <--> Channel <--> router[64].pppg++;
+        router[12].pppg++ <--> Channel <--> router[33].pppg++;
+        router[12].pppg++ <--> Channel <--> router[49].pppg++;
+        router[12].pppg++ <--> Channel <--> router[60].pppg++;
+        router[12].pppg++ <--> Channel <--> router[47].pppg++;
+        router[13].pppg++ <--> Channel <--> router[16].pppg++;
+        router[13].pppg++ <--> Channel <--> router[54].pppg++;
+        router[13].pppg++ <--> Channel <--> router[41].pppg++;
+        router[14].pppg++ <--> Channel <--> router[50].pppg++;
+        router[14].pppg++ <--> Channel <--> router[69].pppg++;
+        router[14].pppg++ <--> Channel <--> router[87].pppg++;
+        router[14].pppg++ <--> Channel <--> router[72].pppg++;
+        router[14].pppg++ <--> Channel <--> router[29].pppg++;
+        router[15].pppg++ <--> Channel <--> router[83].pppg++;
+        router[15].pppg++ <--> Channel <--> router[68].pppg++;
+        router[15].pppg++ <--> Channel <--> router[55].pppg++;
+        router[15].pppg++ <--> Channel <--> router[88].pppg++;
+        router[16].pppg++ <--> Channel <--> router[32].pppg++;
+        router[16].pppg++ <--> Channel <--> router[53].pppg++;
+        router[16].pppg++ <--> Channel <--> router[23].pppg++;
+        router[16].pppg++ <--> Channel <--> router[58].pppg++;
+        router[17].pppg++ <--> Channel <--> router[19].pppg++;
+        router[17].pppg++ <--> Channel <--> router[72].pppg++;
+        router[17].pppg++ <--> Channel <--> router[56].pppg++;
+        router[17].pppg++ <--> Channel <--> router[46].pppg++;
+        router[18].pppg++ <--> Channel <--> router[48].pppg++;
+        router[18].pppg++ <--> Channel <--> router[68].pppg++;
+        router[18].pppg++ <--> Channel <--> router[57].pppg++;
+        router[18].pppg++ <--> Channel <--> router[94].pppg++;
+        router[19].pppg++ <--> Channel <--> router[48].pppg++;
+        router[19].pppg++ <--> Channel <--> router[22].pppg++;
+        router[19].pppg++ <--> Channel <--> router[88].pppg++;
+        router[19].pppg++ <--> Channel <--> router[25].pppg++;
+        router[19].pppg++ <--> Channel <--> router[94].pppg++;
+        router[20].pppg++ <--> Channel <--> router[70].pppg++;
+        router[20].pppg++ <--> Channel <--> router[42].pppg++;
+        router[20].pppg++ <--> Channel <--> router[30].pppg++;
+        router[21].pppg++ <--> Channel <--> router[25].pppg++;
+        router[21].pppg++ <--> Channel <--> router[27].pppg++;
+        router[21].pppg++ <--> Channel <--> router[43].pppg++;
+        router[22].pppg++ <--> Channel <--> router[83].pppg++;
+        router[22].pppg++ <--> Channel <--> router[36].pppg++;
+        router[22].pppg++ <--> Channel <--> router[38].pppg++;
+        router[22].pppg++ <--> Channel <--> router[55].pppg++;
+        router[23].pppg++ <--> Channel <--> router[36].pppg++;
+        router[23].pppg++ <--> Channel <--> router[52].pppg++;
+        router[23].pppg++ <--> Channel <--> router[79].pppg++;
+        router[24].pppg++ <--> Channel <--> router[82].pppg++;
+        router[24].pppg++ <--> Channel <--> router[87].pppg++;
+        router[24].pppg++ <--> Channel <--> router[90].pppg++;
+        router[24].pppg++ <--> Channel <--> router[46].pppg++;
+        router[25].pppg++ <--> Channel <--> router[49].pppg++;
+        router[25].pppg++ <--> Channel <--> router[81].pppg++;
+        router[25].pppg++ <--> Channel <--> router[35].pppg++;
+        router[25].pppg++ <--> Channel <--> router[39].pppg++;
+        router[26].pppg++ <--> Channel <--> router[82].pppg++;
+        router[26].pppg++ <--> Channel <--> router[68].pppg++;
+        router[26].pppg++ <--> Channel <--> router[77].pppg++;
+        router[26].pppg++ <--> Channel <--> router[63].pppg++;
+        router[27].pppg++ <--> Channel <--> router[81].pppg++;
+        router[27].pppg++ <--> Channel <--> router[43].pppg++;
+        router[27].pppg++ <--> Channel <--> router[60].pppg++;
+        router[27].pppg++ <--> Channel <--> router[62].pppg++;
+        router[28].pppg++ <--> Channel <--> router[36].pppg++;
+        router[28].pppg++ <--> Channel <--> router[68].pppg++;
+        router[28].pppg++ <--> Channel <--> router[61].pppg++;
+        router[29].pppg++ <--> Channel <--> router[98].pppg++;
+        router[29].pppg++ <--> Channel <--> router[58].pppg++;
+        router[29].pppg++ <--> Channel <--> router[44].pppg++;
+        router[30].pppg++ <--> Channel <--> router[97].pppg++;
+        router[30].pppg++ <--> Channel <--> router[41].pppg++;
+        router[31].pppg++ <--> Channel <--> router[50].pppg++;
+        router[31].pppg++ <--> Channel <--> router[73].pppg++;
+        router[31].pppg++ <--> Channel <--> router[74].pppg++;
+        router[32].pppg++ <--> Channel <--> router[67].pppg++;
+        router[32].pppg++ <--> Channel <--> router[57].pppg++;
+        router[32].pppg++ <--> Channel <--> router[60].pppg++;
+        router[32].pppg++ <--> Channel <--> router[79].pppg++;
+        router[33].pppg++ <--> Channel <--> router[53].pppg++;
+        router[33].pppg++ <--> Channel <--> router[69].pppg++;
+        router[33].pppg++ <--> Channel <--> router[70].pppg++;
+        router[33].pppg++ <--> Channel <--> router[72].pppg++;
+        router[34].pppg++ <--> Channel <--> router[81].pppg++;
+        router[34].pppg++ <--> Channel <--> router[67].pppg++;
+        router[34].pppg++ <--> Channel <--> router[68].pppg++;
+        router[35].pppg++ <--> Channel <--> router[80].pppg++;
+        router[35].pppg++ <--> Channel <--> router[97].pppg++;
+        router[35].pppg++ <--> Channel <--> router[70].pppg++;
+        router[35].pppg++ <--> Channel <--> router[54].pppg++;
+        router[36].pppg++ <--> Channel <--> router[68].pppg++;
+        router[36].pppg++ <--> Channel <--> router[85].pppg++;
+        router[37].pppg++ <--> Channel <--> router[65].pppg++;
+        router[37].pppg++ <--> Channel <--> router[85].pppg++;
+        router[38].pppg++ <--> Channel <--> router[83].pppg++;
+        router[38].pppg++ <--> Channel <--> router[68].pppg++;
+        router[38].pppg++ <--> Channel <--> router[42].pppg++;
+        router[39].pppg++ <--> Channel <--> router[65].pppg++;
+        router[39].pppg++ <--> Channel <--> router[98].pppg++;
+        router[39].pppg++ <--> Channel <--> router[43].pppg++;
+        router[40].pppg++ <--> Channel <--> router[53].pppg++;
+        router[40].pppg++ <--> Channel <--> router[56].pppg++;
+        router[40].pppg++ <--> Channel <--> router[76].pppg++;
+        router[41].pppg++ <--> Channel <--> router[80].pppg++;
+        router[41].pppg++ <--> Channel <--> router[93].pppg++;
+        router[41].pppg++ <--> Channel <--> router[45].pppg++;
+        router[42].pppg++ <--> Channel <--> router[64].pppg++;
+        router[42].pppg++ <--> Channel <--> router[52].pppg++;
+        router[42].pppg++ <--> Channel <--> router[76].pppg++;
+        router[43].pppg++ <--> Channel <--> router[91].pppg++;
+        router[44].pppg++ <--> Channel <--> router[84].pppg++;
+        router[44].pppg++ <--> Channel <--> router[54].pppg++;
+        router[44].pppg++ <--> Channel <--> router[45].pppg++;
+        router[45].pppg++ <--> Channel <--> router[80].pppg++;
+        router[45].pppg++ <--> Channel <--> router[99].pppg++;
+        router[46].pppg++ <--> Channel <--> router[51].pppg++;
+        router[46].pppg++ <--> Channel <--> router[86].pppg++;
+        router[46].pppg++ <--> Channel <--> router[63].pppg++;
+        router[47].pppg++ <--> Channel <--> router[54].pppg++;
+        router[47].pppg++ <--> Channel <--> router[71].pppg++;
+        router[47].pppg++ <--> Channel <--> router[95].pppg++;
+        router[48].pppg++ <--> Channel <--> router[56].pppg++;
+        router[48].pppg++ <--> Channel <--> router[76].pppg++;
+        router[49].pppg++ <--> Channel <--> router[96].pppg++;
+        router[49].pppg++ <--> Channel <--> router[98].pppg++;
+        router[50].pppg++ <--> Channel <--> router[65].pppg++;
+        router[50].pppg++ <--> Channel <--> router[89].pppg++;
+        router[51].pppg++ <--> Channel <--> router[98].pppg++;
+        router[51].pppg++ <--> Channel <--> router[92].pppg++;
+        router[51].pppg++ <--> Channel <--> router[94].pppg++;
+        router[52].pppg++ <--> Channel <--> router[82].pppg++;
+        router[52].pppg++ <--> Channel <--> router[87].pppg++;
+        router[52].pppg++ <--> Channel <--> router[92].pppg++;
+        router[53].pppg++ <--> Channel <--> router[76].pppg++;
+        router[54].pppg++ <--> Channel <--> router[66].pppg++;
+        router[54].pppg++ <--> Channel <--> router[84].pppg++;
+        router[55].pppg++ <--> Channel <--> router[69].pppg++;
+        router[55].pppg++ <--> Channel <--> router[78].pppg++;
+        router[56].pppg++ <--> Channel <--> router[82].pppg++;
+        router[57].pppg++ <--> Channel <--> router[89].pppg++;
+        router[58].pppg++ <--> Channel <--> router[67].pppg++;
+        router[58].pppg++ <--> Channel <--> router[79].pppg++;
+        router[59].pppg++ <--> Channel <--> router[84].pppg++;
+        router[59].pppg++ <--> Channel <--> router[89].pppg++;
+        router[59].pppg++ <--> Channel <--> router[63].pppg++;
+        router[60].pppg++ <--> Channel <--> router[66].pppg++;
+        router[61].pppg++ <--> Channel <--> router[72].pppg++;
+        router[61].pppg++ <--> Channel <--> router[75].pppg++;
+        router[61].pppg++ <--> Channel <--> router[94].pppg++;
+        router[62].pppg++ <--> Channel <--> router[99].pppg++;
+        router[62].pppg++ <--> Channel <--> router[84].pppg++;
+        router[62].pppg++ <--> Channel <--> router[91].pppg++;
+        router[62].pppg++ <--> Channel <--> router[63].pppg++;
+        router[64].pppg++ <--> Channel <--> router[74].pppg++;
+        router[65].pppg++ <--> Channel <--> router[78].pppg++;
+        router[66].pppg++ <--> Channel <--> router[86].pppg++;
+        router[67].pppg++ <--> Channel <--> router[77].pppg++;
+        router[68].pppg++ <--> Channel <--> router[77].pppg++;
+        router[68].pppg++ <--> Channel <--> router[95].pppg++;
+        router[69].pppg++ <--> Channel <--> router[74].pppg++;
+        router[70].pppg++ <--> Channel <--> router[96].pppg++;
+        router[70].pppg++ <--> Channel <--> router[90].pppg++;
+        router[70].pppg++ <--> Channel <--> router[93].pppg++;
+        router[71].pppg++ <--> Channel <--> router[88].pppg++;
+        router[73].pppg++ <--> Channel <--> router[85].pppg++;
+        router[73].pppg++ <--> Channel <--> router[78].pppg++;
+        router[74].pppg++ <--> Channel <--> router[90].pppg++;
+        router[75].pppg++ <--> Channel <--> router[97].pppg++;
+        router[75].pppg++ <--> Channel <--> router[95].pppg++;
+        router[77].pppg++ <--> Channel <--> router[89].pppg++;
+        router[77].pppg++ <--> Channel <--> router[91].pppg++;
+        router[78].pppg++ <--> Channel <--> router[99].pppg++;
+        router[79].pppg++ <--> Channel <--> router[81].pppg++;
+        router[80].pppg++ <--> Channel <--> router[88].pppg++;
+        router[81].pppg++ <--> Channel <--> router[87].pppg++;
+        router[83].pppg++ <--> Channel <--> router[85].pppg++;
+        router[86].pppg++ <--> Channel <--> router[96].pppg++;
+        router[86].pppg++ <--> Channel <--> router[93].pppg++;
+        router[92].pppg++ <--> Channel <--> router[97].pppg++;
+        router[93].pppg++ <--> Channel <--> router[96].pppg++;
+        router[95].pppg++ <--> Channel <--> router[99].pppg++;
+}

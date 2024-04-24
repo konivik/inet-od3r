@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/od3r_eval -n .:../src $*
+# for shared lib, use: opp_run -l ../src/od3r_eval -n .:../src $*
