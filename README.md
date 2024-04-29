@@ -1,10 +1,10 @@
 # Increasing Network Resilience Through Dynamic Routing with Disjoint Paths
-This repository includes a implementation of OD3R for the INET framework of OMNeT++ as presented in the paper _Increasing Network Resilience Through Dynamic Routing with Disjoint Paths_ at _IFIP Networking 2024_.
-In addition, this repository also includes the topology files as well as the configuration files to reproduce the results presented in the paper.
+This repository includes an implementation of OD3R for the INET framework of OMNeT++ as presented in the paper _Increasing Network Resilience Through Dynamic Routing with Disjoint Paths_ at _IFIP Networking 2024_.
+In addition, this repository also includes the topology files and the configuration files to reproduce the results presented in the paper.
 
 ## Citation
 If you find this code useful, please cite our paper:
-```
+```bibtex
 @INPROCEEDINGS{altenhofen2024od3r,
 	title={{Increasing Network Resilience Through Dynamic Routing with Disjoint Paths}},
 	author={Konrad Altenhofen and Julian Zobel and Bj{\"o}rn Scheuermann},
